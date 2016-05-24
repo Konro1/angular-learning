@@ -2,6 +2,7 @@ import {Component} from 'angular2/core';
 import {SpeakersListComponent} from "./speakers/speakers-list.component";
 import {ROUTER_DIRECTIVES, RouteConfig} from "angular2/router";
 import {SessionsListComponent} from "./sessions/sessions-list.component";
+import {SpeakerDetailsComponent} from "./speakers/speaker-detail.component";
 
 @Component({
     selector: 'app',
@@ -23,6 +24,11 @@ import {SessionsListComponent} from "./sessions/sessions-list.component";
         path: '/speakers',
         name: 'Speakers',
         component: SpeakersListComponent,
+    },
+    {
+        path: '/speakers/:id',
+        name: 'Speaker.show',
+        component: SpeakerDetailsComponent,
     },
     {
         path: '/sessions',

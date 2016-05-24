@@ -1,4 +1,5 @@
 export interface Speaker {
+    speakerId: number,
     firstName: string,
     LastName: string,
     email: string,
